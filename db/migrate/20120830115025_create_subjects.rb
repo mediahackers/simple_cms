@@ -2,7 +2,7 @@ class CreateSubjects < ActiveRecord::Migration
   def change
     create_table :subjects do |t|
       t.string "name"
-      t.position "integer"
+      t.integer "position"
       t.boolean "visible"
       t.integer "page_id"
 
